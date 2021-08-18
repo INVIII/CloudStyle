@@ -2,7 +2,7 @@
   "name": "cloudstyle",
   "version": "1.0.0",
   "description": "File sharing app",
-  "main": "index.js",
+  "main": "web-client/index.js",
   "dependencies": {
     "connect-flash": "^0.1.1",
     "express": "^4.17.1",
@@ -16,7 +16,7 @@
     "type": "git",
     "url": "git+https://github.com/SelfDrivingAssist/CloudStyle.git"
   },
-  "author": "Lawful2002, Ayushsunny",
+  "authors": ["Lawful2002", "Ayushsunny"],
   "license": "Apache 2.0",
   "bugs": {
     "url": "https://github.com/SelfDrivingAssist/CloudStyle/issues"
