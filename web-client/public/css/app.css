@@ -1,79 +1,70 @@
 body {
   background-color: #181a20;
-  color: white;  
+  color: white;
 }
 
 .hero {
-  
   width: 470px;
   margin: 20vh auto;
-  
 }
 
-.title {  
-
-  font-family:sans-serif;
+.title {
+  font-family: sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 64px;
   line-height: 150%;
-  /* identical to box height, or 96px */
-
   letter-spacing: -0.04em;
-
-  /* Text Primary */
-
   color: #ffffff;
 }
 
-.des {  
-
-  font-family:sans-serif;
+.des {
+  font-family: sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
-  line-height: 25px; 
-
-  /* Text Secondary */
-
+  line-height: 25px;
   color: #a8a9c2;
 }
 
-.control{
-  width: 100%;
+.control {
+  width: 80%;
 }
 
-.btn-upload {  
-
-  padding: 10px 53px;
+.btn-upload {
+  width: 100%;
+  padding: 10px 20px;
   background: #246bf7;
   border-radius: 10px;
-  color: white;    
-  font-size: 18px;   
-  font-weight: bold;
+  color: white;
+  font-size: 18px;
 }
 
 .btn-seeUpload {
-
-  padding: 10px 53px;
+  width: 100%;
+  padding: 10px 20px;
   background: #3c4250;
   border-radius: 10px;
-  color: white;    
+  color: white;
   font-size: 18px;
-  font-weight: bold;  
 }
 
-.button{
-  padding: 0;  
+.button {
+  padding: 0 6px;
 }
 
 @media only screen and (max-width: 767px) {
-  .btn-seeUpload, .btn-upload{
+  .btn-seeUpload,
+  .btn-upload {
+    width: 100%;
+  }
+
+  .control {
     width: 100%;
   }
 }
 
-a{
+a {
   text-decoration: none;
-  color: white;  
+  color: white;
 }
