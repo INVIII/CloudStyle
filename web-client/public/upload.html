@@ -4,11 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Upload Files</title>
+    <link rel="stylesheet" href="/css/bootstrap.css" />
+    <link rel="stylesheet" href="/css/app.css" />
+    <script src="/js/bootstrap.js"></script>
 </head>
 <body>
+    
+    <nav class="nav d-flex justify-content-center align-items-center py-3 px-4">
 
-    <h1>Upload</h1>
+        <div class="cont d-flex">
+
+            <div class="back flex-shrink-0">
+                <a href="home.html">
+                <svg width="40" height="32" viewBox="0 0 40 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0)">
+                <path d="M1.5999 16L38.3999 16" stroke="#A8A9C2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M4.80078 21.001L0.79998 16L4.80078 10.999" stroke="#A8A9C2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </g>
+                <defs>
+                <clipPath id="clip0">
+                <rect width="32" height="39.2" fill="white" transform="translate(39.2) rotate(90)"/>
+                </clipPath>
+                </defs>
+                </svg>
+            </a>
+            </div>        
+    
+            <div class="midSpacer flex-shrink-1"></div>
+            
+            <div class="pageName flex-shrink-0" onclick="location.href = 'uploads.html'">
+                My Uploads
+            </div>
+
+        </div>
+
+    </nav>
+    
+    <div class="hero1 d-flex flex-column mb-5">
+        <div class="title text-center mb-3 mx-2">Upload your files</div>
+        <div class="des2 text-center mb-5">The files should be maximum of 100Mb.</div>
+
+        <div class="uploadCont mt-5">
+            <div class="upload-area d-flex flex-column justify-content-center align-items-center">
+                <div class="des2 mb-3 mx-2 text-center">Drag & Drop files here to upload</div>
+                <button class="btn btn-files mx-2">Browse files</button>
+            </div>
+        </div>
+    </div>
+
+    
     
 </body>
 </html>

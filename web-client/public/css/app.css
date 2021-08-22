@@ -1,15 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,800;1,700&display=swap');
+
 body {
   background-color: #181a20;
   color: white;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .hero {
-  width: 470px;
+  max-width: 470px;
   margin: 20vh auto;
 }
 
 .title {
-  font-family: sans-serif;
+  /* font-family: sans-serif; */
   font-style: normal;
   font-weight: 800;
   font-size: 64px;
@@ -62,9 +65,79 @@ body {
   .control {
     width: 100%;
   }
+
+  .title{
+    font-size: 48px;
+  }
 }
 
 a {
   text-decoration: none;
   color: white;
+}
+
+/* uploads */
+.nav{  
+  font-size: 18px;
+  color:  #A8A9C2;  
+  font-weight: bold;
+  background-color: #262A33;
+  height: 70px;
+}
+
+.pageName:hover, .back{
+  color: white;
+  transition: 250ms;
+}
+
+.hero1{
+  max-width: 600px;
+  margin: 18vh auto;
+}
+
+.midSpacer{
+  width: 45vw;
+  min-width: 35vw;
+}
+
+.uploadCont{
+  width: 100%;  
+  background-color: #262A33;
+  border-radius: 20px;
+  padding: 24px;
+}
+
+.upload-area{
+  height: 28vh;
+  border-radius: 20px;
+  border: 2px dashed #5E6271;
+  transition: 250ms;
+}
+
+.upload-area:hover{
+  border: 2px dashed #246bf7;
+  background-color: rgb(36, 107, 247, 0.2);
+}
+
+.btn-files{
+  color: #A8A9C2;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid #A8A9C2;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 16px 38px;
+  transition: 250ms;
+}
+
+.des2{
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;  
+  color: #a8a9c2;
+}
+.btn-files:hover{
+  color: #5E6271;
+  border: 1px solid #5E6271;
 }
