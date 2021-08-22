@@ -4,7 +4,7 @@ body {
 }
 
 .hero {
-  width: 470px;
+  max-width: 470px;
   margin: 20vh auto;
 }
 
@@ -62,9 +62,63 @@ body {
   .control {
     width: 100%;
   }
+
+  .title{
+    font-size: 48px;
+  }
 }
 
 a {
   text-decoration: none;
   color: white;
+}
+
+/* uploads */
+.nav{  
+  font-size: 18px;
+  color:  #A8A9C2;  
+  font-weight: bold;
+  background-color: #262A33;
+  height: 70px;
+}
+
+.hero1{
+  max-width: 600px;
+  margin: 18vh auto;
+}
+
+.midSpacer{
+  width: 45vw;
+  min-width: 35vw;
+}
+
+.uploadCont{
+  width: 100%;  
+  background-color: #262A33;
+  border-radius: 20px;
+  padding: 24px;
+}
+
+.upload-area{
+  height: 28vh;
+  border-radius: 20px;
+  border: 2px dashed #5E6271;
+}
+
+.btn-files{
+  color: #A8A9C2;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid #A8A9C2;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 16px 38px;
+}
+
+.des2{
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;  
+  color: #a8a9c2;
 }
