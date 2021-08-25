@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,800;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
+
+body {
+  background-color: #181a20;
+  color: white;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.nav{  
+  color:  #A8A9C2;  
+  font-size: 1.125rem;
+  font-family: Montserrat,sans-serif;
+  letter-spacing: -.64px;
+  font-weight: 600;
+  background-color: #262A33;
+  height: 67px;
+}
+.title {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 4rem;
+  line-height: 150%;
+  letter-spacing: -.64px;
+  color: white;
+  text-align: center;
+  margin-top: -27px;
+  font-family: "Montserrat", sans-serif;
+  white-space: pre;
+  text-align: center;
+  margin-left: 612px;
+  }
+.pageName:hover, .back{
+  color: white;
+  transition: 250ms;
+}
+
+.hero1{
+  max-width: 600px;
+  margin-right: auto;
+  margin-top: 190px;
+}
+
+.midSpacer{
+  width: 45vw;
+  min-width: 35vw;
+}
+.share {
+    display: flex;
+    max-width: 180px;
+    justify-content: center;
+    border-radius: 10px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-right: 38px;
+    padding-left: 38px;
+    background-color: rgba(36, 107, 247, 1);
+    margin-top: 50px;
+    margin-left: 50px;
+    color: rgba(255, 255, 255, 1);
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    font-family: "Source Sans Pro", sans-serif;
+    cursor: pointer;
+
+}
+
+.button {
+  margin-top: 18px;
+  padding: 0 6px;
+  margin-left: 780px;
+  transition-property: background-color, color, opacity;
+  transition-duration: 0.2s, 0.2s, 0.2s;
+  transition-timing-function: ease, ease, ease;
+  transition-delay: 0s, 0s, 0s;
+}
+
+@media only screen and (max-width: 767px) {
+  .share {
+    width: 100%;
+  }
+}
