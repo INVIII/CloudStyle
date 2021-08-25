@@ -24,11 +24,17 @@ body {
   color: white;    
   font-family: "Montserrat", sans-serif;  
   }
-.pageName:hover, .back{
+.pageName:hover, .back:hover{
   color: white;
   transition: 250ms;
 }
 
+.pageName {
+    cursor: pointer;
+}
+.back {
+    cursor: pointer;
+}
 .hero1{
   max-width: 700px;
   margin: auto;  
@@ -41,18 +47,18 @@ body {
 }
 .share {
   display: flex;
-  max-height: 95px;
-  max-width: 165px;
+  height: 58px;
+  width: 168.8px;
   justify-content: center;
   border-radius: 10px;
   padding-top: 18px;
   padding-bottom: 18px;
-  padding-right: 32px;
-  padding-left: 32px;
+  padding-right: 10px;
+  padding-left: 10px;
   background-color: rgba(36, 107, 247, 1);
   margin-top: 40px;  
   color: rgba(255, 255, 255, 1);
-  font-size: 1.25rem;
+  font-size: 1.16rem;
   line-height: 100%;
   letter-spacing: 0%;
   text-align: center;
