@@ -45,35 +45,32 @@ body {
   min-width: 35vw;
 }
 .share {
-    display: flex;
-    max-width: 180px;
-    justify-content: center;
-    border-radius: 10px;
-    padding-top: 18px;
-    padding-bottom: 18px;
-    padding-right: 38px;
-    padding-left: 38px;
-    background-color: rgba(36, 107, 247, 1);
-    margin-top: 50px;
-    margin-left: 50px;
-    color: rgba(255, 255, 255, 1);
-    font-size: 20px;
-    line-height: 100%;
-    letter-spacing: 0%;
-    text-align: center;
-    font-family: "Source Sans Pro", sans-serif;
-    cursor: pointer;
+  display: flex;
+  max-height: 95px;
+  max-width: 165px;
+  justify-content: center;
+  border-radius: 10px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-right: 38px;
+  padding-left: 38px;
+  background-color: rgba(36, 107, 247, 1);
+  margin-top: 40px;
+  margin-left: 50px;
+  color: rgba(255, 255, 255, 1);
+  font-size: 1.25rem;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  font-family: "Source Sans Pro", sans-serif;
+  cursor: pointer;
 
 }
 
 .button {
-  margin-top: 18px;
+  margin-top: 16px;
   padding: 0 6px;
-  margin-left: 780px;
-  transition-property: background-color, color, opacity;
-  transition-duration: 0.2s, 0.2s, 0.2s;
-  transition-timing-function: ease, ease, ease;
-  transition-delay: 0s, 0s, 0s;
+  margin-left: 792px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -81,3 +78,13 @@ body {
     width: 100%;
   }
 }
+
+/*card*/
+
+  .twill{
+    width: 0px;
+    height: 0px;
+    margin-left: 355px;
+    margin-top: 155px;
+  }
+
