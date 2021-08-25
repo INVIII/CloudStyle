@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,800;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap');
+
+body {
+  background-color: #181a20;
+  color: white;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.title {
+    /* font-family: sans-serif; */
+    font-style: normal;
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 150%;
+    letter-spacing: -0.01em;
+    color: #ffffff;
+    margin-top: -30px;
+  }
+
+.nav{  
+    color:  #A8A9C2;  
+    font-size: 1.125rem;
+    font-family: Montserrat,sans-serif;
+    letter-spacing: -.64px;
+    font-weight: 600;
+    background-color: #262A33;
+    height: 67px;
+  }
+  
+  .pageName:hover, .back{
+    color: white;
+    transition: 250ms;
+  }
+  
+  .hero1{
+    max-width: 600px;
+    margin: 18vh auto;
+    margin-top: 190px;
+  }
+  
+  .midSpacer{
+    width: 45vw;
+    min-width: 35vw;
+  }
+  
+  .uploadCont{
+    width: 100%;  
+    background-color: #262A33;
+    border-radius: 20px;
+    padding: 24px;
+  }
+  
+  .upload-area{
+    height: 28vh;
+    border-radius: 20px;
+    border: 2px dashed #5E6271;
+    transition: 250ms;
+  }
+  
+  .upload-area:hover{
+    border: 2px dashed #246bf7;
+    background-color: rgb(36, 107, 247, 0.2);
+  }
+  
+  .btn-files{
+    color: #A8A9C2;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid #A8A9C2;
+    border-radius: 14px;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px 38px;
+    transition: 250ms;
+  }
+  
+  .des2{
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;  
+    color: #a8a9c2;
+    margin-bottom: 30px;
+    letter-spacing: -.64px;
+  }
+  .btn-files:hover{
+    color: #5E6271;
+    border: 1px solid #5E6271;
+  }
+  
+  .down {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    justify-content: center;  
+    }
+  .down-2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 150%;
+    letter-spacing: -0.04em;
+    color: #ffffff;
+    text-align: center;
+    margin-top: -20px;
+    font-family: "Montserrat", sans-serif;
+    }
+  .down-3 {    
+    width: 100%;
+    font-family: "Source Sans Pro" ,sans-serif;  
+    font-size: 18px;
+    line-height: 25px;
+    color: #a8a9c2; 
+    letter-spacing: 0.5px;
+    margin-top: 14px;  
+    }

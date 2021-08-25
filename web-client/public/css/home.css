@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,800;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap");
+
+body {
+  background-color: #181a20;
+  color: white;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.hero {
+  max-width: 470px;
+  margin: 20vh auto;
+}
+
+.title {  
+  font-style: normal;
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 150%;
+  letter-spacing: -0.01em;
+  color: #ffffff;
+  margin-top: -30px;
+}
+
+.des {
+  font-family: "Source Sans Pro", sans-serif;
+  letter-spacing: 0.5px;
+  font-size: 20px;
+  line-height: 25px;
+  color: #a8a9c2;
+  margin-bottom: 55px;
+}
+
+.control {
+  width: 80%;
+}
+
+.btn-upload {
+  font-weight: 600;
+  width: 100%;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: -8px;
+  padding-right: -8px;
+  background: #246bf7;
+  border-radius: 12px;
+  color: white;
+  font-size: 18px;
+  transition: 250ms;
+}
+
+.btn-seeUpload {
+  font-weight: 600;
+  width: 100%;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: -8px;
+  padding-right: -8px;
+  background: #3c4250;
+  border-radius: 12px;
+  color: white;
+  font-size: 18px;
+  transition: 250ms;
+}
+
+.button {
+  margin-top: 6px;
+  padding: 0 6px;
+}
+
+.btn-upload:hover{
+  background: rgba(36, 107, 247, 0.75);
+  color: white;
+}
+
+.btn-seeUpload:hover{
+  background: rgba(60, 66, 80, 0.75);
+  color: white;
+}
+
+@media only screen and (max-width: 767px) {
+  .btn-seeUpload,
+  .btn-upload {
+    width: 100%;
+  }
+
+  .control {
+    width: 100%;
+  }
+
+  .title {
+    font-size: 48px;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.other {
+  max-width: 1000px;
+  margin: 330px auto;
+}
+
+.cards {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.card {
+  background-color: #262a33;
+  padding: 60px 20px;
+  border-radius: 20px;
+  width: 341.67px;
+  margin: 12px;
+}
+
+.logo1 {
+  background-color: #FFDD7240;
+}
+
+.logo2 {
+  background-color: rgba(251, 143, 138, 0.251);
+}
+
+.logo3 {
+  background-color: rgba(193, 96, 250, 0.251);
+}
+
+.logo2,
+.logo1,
+.logo3 {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+
+.sub-head {
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 28px 0 14px;
+}
+
+.des1 {
+  font-size: 20px;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #a8a9c2;
+}
+
+img {
+  margin: auto;
+  width: 54px;
+  height: 54px;
+}
+
+.down {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  justify-content: center;
+}
+.down-2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 150%;
+  letter-spacing: -0.04em;
+  color: #ffffff;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+.down-3 {
+  width: 100%;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 18px;
+  line-height: 25px;
+  color: #a8a9c2;
+  letter-spacing: 0.5px;
+  margin-top: 14px;
+}
+
+@media only screen and (max-width: 992px) {
+  .card {
+    width: auto;
+  }
+}
+
+.foot {
+  padding: 20px 40px;
+  margin-top: 500px;
+  background-color: #262a33;
+
+  font-family: "Source Sans Pro", sans-serif;
+  letter-spacing: 0.5px;
+  font-size: 20px;
+  line-height: 25px;
+  color: #a8a9c2;
+}
