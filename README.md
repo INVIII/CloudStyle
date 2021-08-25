@@ -1,4 +1,4 @@
-<h1 style ="font-size: 62pt; font-weight:bold" align="center">
+<h1 style ="font-size: 72pt; font-weight:bold" align="center">
 Cloud Style
 </h1>
 
