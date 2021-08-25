@@ -25,11 +25,14 @@ body {
 
 .des {
   font-family: "Source Sans Pro" ,sans-serif;
-  letter-spacing: 0.5px;  
+  letter-spacing: -0.01em; 
   font-size: 20px;
   line-height: 25px;
   color: #a8a9c2;    
-  margin-bottom: 55px;
+  margin-bottom: 52px;
+  margin-top: 20px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .control {
@@ -89,9 +92,11 @@ a {
 
 /* uploads */
 .nav{  
-  font-size: 18px;
   color:  #A8A9C2;  
-  font-weight: bold;
+  font-size: 1.125rem;
+  font-family: Montserrat,sans-serif;
+  letter-spacing: -.64px;
+  font-weight: 600;
   background-color: #262A33;
   height: 70px;
 }
@@ -147,6 +152,8 @@ a {
   font-weight: normal;
   font-size: 18px;  
   color: #a8a9c2;
+  margin-bottom: 30px;
+  letter-spacing: -.64px;
 }
 .btn-files:hover{
   color: #5E6271;
@@ -167,6 +174,7 @@ a {
   letter-spacing: -0.04em;
   color: #ffffff;
   text-align: center;
+  margin-top: -20px;
   font-family: "Montserrat", sans-serif;
   }
 .down-3 {    
