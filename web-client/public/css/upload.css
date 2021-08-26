@@ -32,6 +32,10 @@ body {
     color: white;
     transition: 250ms;
   }
+
+  .pageName{
+    cursor: pointer;
+  }
   
   .hero1{
     max-width: 600px;
