@@ -14,4 +14,8 @@ router.get("/uploads", (req, res)=>{
     res.sendFile(path.join(__dirname, '..', 'public', 'uploads.html'));
 })
 
+router.post("/", (req, res)=>{
+    res.sendFile(path.join(__dirname, '..', 'public', 'uploads.html'));
+})
+
 module.exports = router;

@@ -48,12 +48,13 @@
         <div class="uploadCont mt-5">
             <div class="upload-area d-flex flex-column justify-content-center align-items-center">
                 <div class="des2 mb-3 mx-2 text-center">Drag & Drop files here to upload</div>
-                <button class="btn btn-files mx-2">Browse files</button>
+                <form method="POST" action="/">
+                    <label for="fileIn"><div class="btn btn-files mx-2">Browse files</div></label>
+                    <input class="visually-hidden file-in" type="file" id="fileIn" onchange="form.submit()">
+                </form>
             </div>
         </div>
     </div>
-
-    
     
 </body>
 </html>
