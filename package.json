@@ -1,0 +1,21 @@
+{
+  "name": "cloudstyle",
+  "version": "1.0.0",
+  "description": "<h1 style =\"font-size: 72pt; font-weight:bold\" align=\"center\"> Cloud Style </h1>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install": "cd web-client && npm install",
+    "start": "cd web-client && node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SelfDrivingAssist/CloudStyle.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SelfDrivingAssist/CloudStyle/issues"
+  },
+  "homepage": "https://github.com/SelfDrivingAssist/CloudStyle#readme"
+}
