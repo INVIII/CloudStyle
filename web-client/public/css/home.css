@@ -6,10 +6,44 @@ body {
   color: white;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}
 
+/* Nav */
+
+.navbar{  
+  color:  #A8A9C2;  
+    font-size: 1.125rem;
+    font-family: Montserrat,sans-serif;
+    letter-spacing: -.64px;
+    font-weight: 600;
+    background-color: #1e2027;
+    height: 67px;
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  }
+  
+  .pageName:hover, .back{
+    color: white;
+    transition: 250ms;
+  }
+
+  .pageName{
+    cursor: pointer;
+    margin-left: 70px;
+    color:  #A8A9C2;  
+  }
+  
+  .midSpacer{
+    width: 65vw;
+    min-width: 35vw;
+  }
+
+
+/* Hero */
 .hero {
   max-width: 470px;
-  margin: 20vh auto;
+  margin: 30vh auto;
 }
 
 .title {  
