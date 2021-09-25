@@ -1,21 +1,65 @@
 {
-  "name": "cloudstyle",
-  "version": "1.0.0",
-  "description": "<h1 style =\"font-size: 72pt; font-weight:bold\" align=\"center\"> Cloud Style </h1>",
-  "main": "index.js",
+  "name": "big-cloud",
+  "version": "0.1.0",
+  "private": true,
+  "description": "```\r yarn install\r ```",
+  "author": "",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "install": "cd web-client && npm install",
-    "start": "cd web-client && node index.js"
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
   },
+  "main": "babel.config.js",
+  "dependencies": {
+    "axios": "^0.21.4",
+    "bootstrap": "^5.0.2",
+    "@popperjs/core": "^2.10.1",
+    "popper": "^1.0.1",
+    "core-js": "^3.6.5",
+    "firebase": "^9.0.2",
+    "hover.css": "^2.3.2",
+    "jquery": "^3.6.0",
+    "vue": "^3.0.0",
+    "vue-anchor-router-link": "^0.8.5",
+    "vue-router": "^4.0.0-0",
+    "vuex": "^4.0.0-0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-plugin-router": "~4.5.0",
+    "@vue/cli-service": "^4.5.13",
+    "@vue/compiler-sfc": "^3.0.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^7.0.0"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/vue3-essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "bugs": {
+    "url": "https://github.com/Lawful2002/BigCloud/issues"
+  },
+  "homepage": "https://github.com/Lawful2002/BigCloud#readme",
+  "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SelfDrivingAssist/CloudStyle.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/SelfDrivingAssist/CloudStyle/issues"
-  },
-  "homepage": "https://github.com/SelfDrivingAssist/CloudStyle#readme"
+    "url": "git+https://github.com/Lawful2002/BigCloud.git"
+  }
 }
