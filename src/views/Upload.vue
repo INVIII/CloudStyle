@@ -1,33 +1,19 @@
 <template>
-<nav class="nav d-flex justify-content-center align-items-center py-3 px-4">
 
-        <div class="cont d-flex">
+<!--Nav bar-->
+<div id = "app">
+ <nav class="nav fixed-top d-flex justify-content-around align-items-center py-3">
 
-            <div class="back flex-shrink-0">
-                <a href="home.html">
-                <svg width="40" height="28" viewBox="0 0 40 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0)">
-                <path d="M1.5999 16L38.3999 16" stroke="#A8A9C2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                <path d="M4.80078 21.001L0.79998 16L4.80078 10.999" stroke="#A8A9C2" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                </g>
-                <defs>
-                <clipPath id="clip0">
-                <rect width="32" height="39.2" fill="white" transform="translate(39.2) rotate(90)"/>
-                </clipPath>
-                </defs>
-                </svg>
-            </a>
-            </div>        
-    
-            <div class="midSpacer flex-shrink-1"></div>
-            
-            <div class="pageName flex-shrink-0" onclick="location.href = 'uploads.html'">
-                My Uploads
-            </div>
 
-        </div>
+          <div class="back1 flex-shrink-0" onclick="location.href = '/'">
+          Home
+          </div>   
+           <div class="midSpacer flex-shrink-1"></div>   
+          <div class="back2 flex-shrink-0" onclick="location.href = '/uploads'">
+          Uploads
+          </div>
 
-    </nav>
+  </nav>
     
     <div class="hero1 d-flex flex-column mb-5">
         <div class="title text-center mb-3 mx-2">Upload your files</div>
@@ -43,7 +29,7 @@
             </div>
         </div>
     </div>
-    
+</div>
 </template>
 
 <script>
@@ -77,33 +63,34 @@ body {
   }
 
 .nav{  
-    color:  #A8A9C2;  
     font-size: 1.125rem;
     font-family: Montserrat,sans-serif;
     letter-spacing: -.64px;
     font-weight: 600;
-    background-color: #262A33;
+    background-color: #1e2027;
     height: 67px;
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
   }
   
-  .pageName:hover, .back{
-    color: white;
-    transition: 250ms;
-  }
+.back1:hover, .back2:hover{
+  color: #babac4a1;
+  transition: 250ms;
+}
 
-  .pageName{
+.back1 {
+    color: aliceblue;
     cursor: pointer;
-  }
-  
+    margin-right: 500px;
+}
+.back2 {
+    color: aliceblue;
+    cursor: pointer;
+    margin-left: 500px;
+}
   .hero1{
     max-width: 600px;
     margin: 18vh auto;
     margin-top: 190px;
-  }
-  
-  .midSpacer{
-    width: 45vw;
-    min-width: 35vw;
   }
   
   .uploadCont{
@@ -137,13 +124,13 @@ body {
   }
   
   .des2{
-    font-family: sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 18px;  
+    font-size: 22px;  
     color: #a8a9c2;
     margin-bottom: 30px;
-    letter-spacing: -.64px;
+    letter-spacing: -.44px;
   }
   .btn-files:hover{
     color: #5E6271;

@@ -40,7 +40,7 @@
 
           <button
             class="btn-seeUpload btn flex-fill"
-            onclick="location.href = '/uploads.html'"
+            onclick="location.href = '/uploads'"
           >
             My Uploads
           </button>
@@ -120,7 +120,7 @@
     <!--Footer-->
     <div class="d-sm-flex justify-content-between foot">
 
-      <div class="text-center mb-2"><a style="color: #a8a9c2;" href="https://github.com/SelfDrivingAssist/CloudStyle">Github</a></div>
+      <div class="text-center mb-2"><a style="color: #a8a9c2;" href="https://github.com/INVIII/CloudStyle">Github</a></div>
       <div class="text-center">&copy; CloudStyle 2021</div>
 </div>
     </div>
@@ -136,7 +136,7 @@ export default {
 </script>
 
 <!--CSS to this component only -->
-<style>
+<style scoped>
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,800;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap");
 
