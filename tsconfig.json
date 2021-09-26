@@ -5,6 +5,7 @@
       "strict": true,
       "jsx": "preserve",
       "importHelpers": true,
+      "noImplicitAny": false,
       "moduleResolution": "node",
       "skipLibCheck": true,
       "esModuleInterop": true,
@@ -24,7 +25,7 @@
     "include": [
       "src/**/*.ts",
       "src/**/*.vue"
-, "src/pages/Home/index.ts"    ],
+, "src/pages/Home/index.ts", "src/main.ts"    ],
     "exclude": [
       "node_modules"
     ]

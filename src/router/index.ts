@@ -1,37 +1,39 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
-
-// import { environment } from '@/configs/environment'
-// import { handlePageTitle } from './helpers'
-
-import { Home } from '../pages/Home'
-import { Upload, Uploads } from './secRoutes'
+import { environment } from '@/environment/environment'
+import Home from '../views/Home.vue'
+import Upload from '../views/Upload.vue'
+import Uploads from '../views/Uploads.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
     name: 'Home',
-    component: Home,
+    component: Home
   },
+
   {
     path: '/upload',
     name: 'Upload',
-    component: Upload,
+    component: Upload
   },
+
   {
     path: '/uploads',
     name: 'Uploads',
-    component: Uploads,
+    component: Uploads
   },
+
   {
     path: '/:pathMatch(.*)',
     name: 'NotFound',
     redirect: '/',
   },
+
 ]
 
-const router = createRouter({
-  history: createWebHistory(process.env.BASE_URL),
-  routes
+export const router = createRouter({
+  history: createWebHistory(environment.appUrl),
+  routes,
 })
 
 export default router
