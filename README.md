@@ -32,6 +32,7 @@ You can access the application online [here](link).
 Installation
 </h1>
 
+
 ## Project setup
 ```
 yarn install
