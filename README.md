@@ -8,7 +8,7 @@ Cloud Style
 
 <h2>How it works</h2>
 
-With **Cloud Style** you can upload any file and share it with anyone. All files expire after 30 minutes, so you don't need to delete them. You do not need to login to use this service, as long as it is in the same browser, the list of your uploads will be available.
+With **Cloud Style** you can upload any file and share it with anyone. All files expire after 180 minutes, so you don't need to delete them. You do not need to login to use this service, as long as it is in the same browser, the list of your uploads will be available.
 
 
 <h2>User Interface</h2>
@@ -17,14 +17,20 @@ With **Cloud Style** you can upload any file and share it with anyone. All files
 You can access the application online [here](link).
 
 <h3 align="center">
-  <a href="https://www.figma.com/file/J181HwJn1RFvYDrAyFkPXd/Clippy-Cloud?node-id=1%3A2">
+  <a href="link">
     <img
       width="800"
-      alt="Clippy Cloud"
+      alt="Cloud Style"
       src="https://i.imgur.com/HHtabDk.jpeg"
     >
   </a>
 </h3>
+
+<br>
+
+<h1 style ="font-size: 38pt; font-weight:bold" align="left">
+Installation
+</h1>
 
 ## Project setup
 ```

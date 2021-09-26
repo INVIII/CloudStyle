@@ -1,6 +1,6 @@
 {
-  "name": "big-cloud",
-  "version": "0.1.0",
+  "name": "cloudstyle",
+  "version": "1.0.0",
   "private": true,
   "description": "```\r yarn install\r ```",
   "author": "",
@@ -54,12 +54,16 @@
     "not dead"
   ],
   "bugs": {
-    "url": "https://github.com/Lawful2002/BigCloud/issues"
+    "url": "https://github.com/INVIII/CloudStyle/issues"
   },
-  "homepage": "https://github.com/Lawful2002/BigCloud#readme",
+  "homepage": "https://github.com/INVIII/CloudStyle#readme",
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Lawful2002/BigCloud.git"
-  }
+    "url": "git+https://github.com/INVIII/CloudStyle.git"
+  },
+  "authors": [
+    "Lawful2002",
+    "Ayushsunny"
+  ]
 }
