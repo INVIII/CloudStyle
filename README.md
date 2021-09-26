@@ -54,3 +54,23 @@ yarn lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+<br>
+
+## Author
+
+* Github: [@INVII](https://github.com/INVIII)
+
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/INVIII/CloudStyle/issues). You can also take a look at the [contributing guide](https://github.com/INVIII/CloudStyle/blob/master/CONTRIBUTING.md).
+
+## Show your support
+
+Give a ⭐️ if this project helped you!
+
+## 📝 License
+
+This project is [Apache](https://github.com/INVIII/CloudStyle/blob/master/LICENSE) licensed.
+
+***
