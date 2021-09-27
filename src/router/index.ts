@@ -1,9 +1,10 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
+import { environment } from '@/environment/environment'
 import Home from '../views/Home.vue'
 import Upload from '../views/Upload.vue'
 import Uploads from '../views/Uploads.vue'
 
-const routes = [
+const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
     name: 'Home',
@@ -20,13 +21,19 @@ const routes = [
     path: '/uploads',
     name: 'Uploads',
     component: Uploads
-  }
+  },
+
+  {
+    path: '/:pathMatch(.*)',
+    name: 'NotFound',
+    redirect: '/',
+  },
 
 ]
 
-const router = createRouter({
-  history: createWebHistory(process.env.BASE_URL),
-  routes
+export const router = createRouter({
+  history: createWebHistory(environment.appUrl),
+  routes,
 })
 
 export default router
