@@ -1,9 +1,6 @@
 {
   "name": "cloudstyle",
-  "version": "1.0.0",
-  "private": true,
-  "description": "```\r yarn install\r ```",
-  "author": "",
+  "version": "0.1.0",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
