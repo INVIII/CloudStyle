@@ -4,15 +4,15 @@
     <nav class="navbar fixed-top d-flex justify-content-between align-items-center py-3">
 
 
-          <div class="back flex-shrink-0">
-              <a href="#">Home</a>
+          <div class="flex-shrink-0">
+              <a class="back" href="#">Home</a>
           </div>        
           <div class="d-flex">
-          <div class="pageName flex-shrink-0"><a href="/upload">Upload</a>
+          <div class="flex-shrink-0"><a class="pageName" href="/upload">Upload</a>
           </div>
-          <div class="pageName flex-shrink-0"><a href="#services">Services</a>
+          <div class="flex-shrink-0"><a class="pageName" href="#services">Services</a>
           </div>
-          <div class="pageName flex-shrink-0"><a href="#services">About Us</a>
+          <div class="flex-shrink-0"><a class="pageName" href="#services">About Us</a>
           </div>
          </div>
 
