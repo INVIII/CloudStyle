@@ -10,7 +10,7 @@
           </div>        
           <div class="midSpacer flex-shrink-1"></div>
           <div class="back2 flex-shrink-0" onclick="location.href = '/upload'">
-          Upload
+          Upload Files
           </div>
         
 
@@ -73,12 +73,12 @@ body {
 }
 
 .back1 {
-    color: aliceblue;
+    color: rgb(203, 210, 216);
     cursor: pointer;
     margin-right: 500px;
 }
 .back2 {
-    color: aliceblue;
+    color: rgb(203, 210, 216);
     cursor: pointer;
     margin-left: 500px;
 }
@@ -128,7 +128,7 @@ body {
 /*card*/
 
   .twill{    
-    margin-top: 155px;
+    margin-top: 185px;
   }
 
   img{

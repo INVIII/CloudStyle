@@ -1,0 +1,28 @@
+{
+  "name": "Cloud Style",
+  "short_name": "Cloud Style",
+  "description": "Easy way to upload and share files quickly for free and no login required.",
+  "lang": "en",
+  "start_url": "/?utm_source=PWA&utm_medium=launcher",
+  "background_color": "#181a20",
+  "theme_color": "#181a20",
+  "display": "standalone",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "32x32",
+      "type": "image/ico"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Upload Files",
+      "url": "/upload?utm_source=PWA&utm_medium=shortcut"
+    },
+    {
+      "name": "My Uploads",
+      "url": "/uploads?utm_source=PWA&utm_medium=shortcut"
+    }
+  ]
+}

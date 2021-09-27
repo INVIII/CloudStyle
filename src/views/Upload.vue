@@ -10,14 +10,14 @@
           </div>   
            <div class="midSpacer flex-shrink-1"></div>   
           <div class="back2 flex-shrink-0" onclick="location.href = '/uploads'">
-          Uploads
+          My Uploads
           </div>
 
   </nav>
     
     <div class="hero1 d-flex flex-column mb-5">
         <div class="title text-center mb-3 mx-2">Upload your files</div>
-        <div class="des2 text-center">The files should be maximum of 100mb.</div>
+        <div class="des2 text-center">The files should be maximum of 300mb.</div>
 
         <div class="uploadCont mt-5">
             <div class="upload-area d-flex flex-column justify-content-center align-items-center">
@@ -78,12 +78,12 @@ body {
 }
 
 .back1 {
-    color: aliceblue;
+    color: rgb(203, 210, 216);
     cursor: pointer;
     margin-right: 500px;
 }
 .back2 {
-    color: aliceblue;
+    color: rgb(203, 210, 216);
     cursor: pointer;
     margin-left: 500px;
 }

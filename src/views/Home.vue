@@ -164,15 +164,20 @@ html {
     box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
   }
   
-  .pageName:hover, .back{
-    color: white;
-    transition: 250ms;
+  .pageName:hover, .back:hover{
+   color: #babac4a1;
+   transition: 250ms;
+  }
+
+  .back {
+    color: rgb(203, 210, 216);
+    cursor: pointer;
   }
 
   .pageName{
+    color: rgb(203, 210, 216);
     cursor: pointer;
-    margin-left: 70px;
-    color:  #A8A9C2;  
+    margin-left: 70px 
   }
 
 /* Hero */
