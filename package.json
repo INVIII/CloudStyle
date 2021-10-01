@@ -3,6 +3,6 @@
     "version": "0.1.0",
     "scripts": {
         "serve": "cd web && yarn serve",        
-        "install": "cd web && yarn install && cd .. && cd api && yarn install"
+        "make": "cd web && yarn install && cd .. && cd api && yarn install"
     }
 }
