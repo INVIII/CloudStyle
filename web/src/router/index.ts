@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router';
-import { environment } from '@/environment/environment';
+import environment  from '../environment/environment';
 import Home from '../views/Home.vue';
 import Upload from '../views/Upload.vue';
 import Uploads from '../views/Uploads.vue';

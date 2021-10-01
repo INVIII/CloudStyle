@@ -1,6 +1,6 @@
 <template>
 
-<!-- Navbar Section -->
+
 <div id = "app">
     <nav class="nav fixed-top d-flex justify-content-around align-items-center py-3">
 
@@ -31,7 +31,7 @@
 
 <script>
 export default {
-  name: 'Upload',
+  name: 'Uploads',
 };
 </script>
 

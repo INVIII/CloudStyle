@@ -1,5 +1,7 @@
 module.exports = {
+  plugins: ['@typescript-eslint'],
   root: true,
+  parser: "vue-eslint-parser",
   env: {
     node: true,
     browser: true,
@@ -8,26 +10,29 @@ module.exports = {
     define: true,
     require: true
   },
+  
+  // eslint-disable-next-line no-dupe-keys
+  parser: require.resolve('@typescript-eslint/parser'),
+  
+  parserOptions: {
+    parser: 'babel-eslint',
+    extraFileExtensions: ['.vue'],
+    ecmaVersion: 2020,
+    sourceType: 'module',
+    allowImportExportEverywhere: true,
+    ecmaFeatures: {
+      jsx: true
+    }
+  },
   extends: [
+    'plugin:@typescript-eslint/recommended',
     'plugin:vue/vue3-essential',
     '@vue/airbnb',
     '@vue/typescript/recommended',
     'plugin:import/typescript',
-    'plugin:@typescript-eslint/recommended',
     'prettier',
     'prettier/@typescript-eslint',
   ],
-  'parser': '@typescript-eslint/parser',
-  parserOptions: {
-    ecmaVersion: 2020,
-    sourceType: 'module',
-    ecmaFeatures: {
-      globalReturn: true,
-      jsx: true
-    },
-    allowImportExportEverywhere: true
-  },
-
   rules: {
     strict: [2, 'never'],
     'no-multi-spaces': 0,
@@ -76,10 +81,10 @@ module.exports = {
     '@typescript-eslint/no-var-requires': 0,
     '@typescript-eslint/no-empty-function': 0,
   },
-    "settings": {
-      "import/resolver": {
-        "node": {
-          "extensions": [".js", ".jsx", ".ts", ".tsx"]
+    'settings': {
+      'import/resolver': {
+        'node': {
+          'extensions': ['.js', '.jsx', '.ts', '.tsx']
         }
       }
     },

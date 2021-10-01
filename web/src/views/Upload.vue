@@ -1,6 +1,5 @@
 <template>
 
-<!--Nav bar-->
 <div id = "app">
  <nav class="nav fixed-top d-flex justify-content-around align-items-center py-3">
 
@@ -22,17 +21,17 @@
             <div class="upload-area d-flex flex-column justify-content-center align-items-center">
                 <div class="des2 mb-3 mx-2 text-center">Drag & Drop files here to upload</div>
                 <form method="POST" action="/">
-                    <label for="fileIn"><div class="btn btn-files mx-2" @click="onUpload">
+                    <label for="fileIn"><div class="btn btn-files mx-2" v-on:click="onUpload">
                       Browse files</div></label>
                     <input class="visually-hidden file-in"
-                    type="file" id="fileIn" @change="previewImage" accept="image/*">
+                    type="file" id="fileIn" v-on:change="previewImage" accept="image/*">
                   <div>
                  <p>Progress: {{uploadValue.toFixed()+"%"}}
                 <progress id="progress" :value="uploadValue" max="100" ></progress>  </p>
                  </div>
-                <div v-if="imageData!=null">
+                 <div v-if="imageData!=null">
                   <img class="preview" :src="picture">
-                  <br>
+                  <br />
                 </form>
             </div>
         </div>
@@ -74,7 +73,7 @@ export default {
     }
 
   }
-}
+};
 </script>
 
 <style>
