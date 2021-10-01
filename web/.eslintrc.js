@@ -13,7 +13,6 @@ module.exports = {
     'plugin:vue/vue3-essential',
     '@vue/airbnb',
     '@vue/typescript/recommended',
-    'airbnb',
     'plugin:import/typescript',
     'plugin:@typescript-eslint/recommended',
     'prettier',
@@ -23,7 +22,6 @@ module.exports = {
   parserOptions: {
     'project': './tsconfig.json',
     sourceType: 'module',
-    ecmaVersion: 6,
     ecmaFeatures: {
       globalReturn: true,
       jsx: true
