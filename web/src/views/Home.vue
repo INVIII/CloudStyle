@@ -128,13 +128,10 @@
 </template>
 
 <script>
-// import 'bootstrap/dist/css/bootstrap.min.css';
-// import 'jquery/src/jquery.js';
-// import 'bootstrap/dist/js/bootstrap.min.js';
 
-export default ({
+export default {
   name: 'Home',
-});
+};
 </script>
 
 <!--CSS to this component only -->

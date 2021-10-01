@@ -9,8 +9,5 @@ import 'bootstrap/dist/js/bootstrap.min';
 
 export default {
   name: 'App',
-  setup() {
-    
-  },
 }
 </script>
