@@ -3,7 +3,6 @@ module.exports = {
   env: {
     node: true,
     browser: true,
-    es6: true
   },
   globals: {
     define: true,
@@ -20,7 +19,7 @@ module.exports = {
   ],
   'parser': '@typescript-eslint/parser',
   parserOptions: {
-    'project': './tsconfig.json',
+    ecmaVersion: 2020,
     sourceType: 'module',
     ecmaFeatures: {
       globalReturn: true,
@@ -28,13 +27,8 @@ module.exports = {
     },
     allowImportExportEverywhere: true
   },
-  globals: {
-    define: true,
-    require: true
-  },
+
   rules: {
-    'import/extensions': 0,
-    'import/no-unresolved': 0,
     strict: [2, 'never'],
     'no-multi-spaces': 0,
     'spaced-comment': 0,
