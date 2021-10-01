@@ -29,11 +29,11 @@ const routes: Array<RouteRecordRaw> = [
     redirect: '/',
   },
 
-];
+]
 
 const router = createRouter({
   history: createWebHistory(environment.appUrl),
   routes,
-});
+})
 
 export default router;

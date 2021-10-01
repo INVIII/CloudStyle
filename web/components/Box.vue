@@ -9,11 +9,11 @@
                     type="file" id="fileIn" v-on:change="previewImage" accept="image/*">
                   <div>
                  <p>Progress: {{uploadValue.toFixed()+"%"}}
-                <progress id="progress" :value="uploadValue" max="100" ></progress>  </p>
-                 </div>
-                 <div v-if="imageData!=null">
+                <progress id="progress" :value="uploadValue" max="100" ></progress>
+                </p>
+                  </div>
+                  <div v-if="imageData!=null">
                   <img class="preview" :src="picture">
-                  <br />
                 </form>
             </div>
         </div>
@@ -55,5 +55,5 @@ export default defineComponent({
     }
 
   }
-};
+});
 </script>
