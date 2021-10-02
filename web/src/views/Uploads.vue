@@ -31,7 +31,7 @@
 
 <script>
 export default {
-  name: 'Upload',
+  name: 'Uploads',
 };
 </script>
 

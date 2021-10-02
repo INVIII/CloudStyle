@@ -27,8 +27,12 @@
 </template>
 
 <script>
-import { Box } from "../../components/Box";
-export default defineComponent({
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'jquery/src/jquery';
+import 'bootstrap/dist/js/bootstrap.min';
+import Box from "../../components/Box";
+
+export default({
   name: "Upload",
   components: { 
     Box 
@@ -47,7 +51,6 @@ body {
 }
 
 .title {
-  /* font-family: sans-serif; */
   font-style: normal;
   font-weight: 800;
   font-size: 64px;
@@ -66,9 +69,6 @@ body {
   height: 67px;
   box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14),
     0 1px 5px 0 rgba(0, 0, 0, 0.12);
-}
-img.preview {
-  width: 200px;
 }
 
 .back1:hover,

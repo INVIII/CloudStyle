@@ -13,7 +13,8 @@
                 </p>
                   </div>
                   <div v-if="imageData!=null">
-                  <img class="preview" :src="picture">
+                  <img class="preview" :src="picture"></div>
+                  
                 </form>
             </div>
         </div>
@@ -22,10 +23,11 @@
 
 
 <script>
-import firebase from "firebase";
-import { defineComponent } from 'vue'
-export default defineComponent({
-  name: "Box",
+import firebase from 'firebase/compat/app'
+import 'firebase/compat/storage';
+
+export default({
+  name: 'Box',
   data(){
   return{
       imageData: null,
@@ -57,3 +59,9 @@ export default defineComponent({
   }
 });
 </script>
+
+<style scoped>
+img.preview {
+  width: 200px;
+}
+</style>

@@ -1,10 +1,9 @@
 import { createApp } from 'vue';
-import firebase from 'firebase/compat/app';
 import router from './router';
-
 import App from './App.vue'
 
 
+import firebase from 'firebase/compat/app';
 
   firebase.initializeApp({
     apiKey: "AIzaSyCXtI8sC_zTdrev5qUiwIRSN51yMAwVfls",
