@@ -30,7 +30,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'jquery/src/jquery';
 import 'bootstrap/dist/js/bootstrap.min';
-import Box from "../../components/Box";
+import Box from "../components/Box";
 
 export default({
   name: "Upload",
