@@ -30,6 +30,9 @@
             Progress: {{ uploadValue.toFixed() + "%" }}
             <progress id="progress" :value="uploadValue" max="100"></progress>
           </p>
+          <p>
+            {{picture}}
+          </p>
         </div>
         <div v-if="imageData != null">
           <img class="preview" :src="picture" />
