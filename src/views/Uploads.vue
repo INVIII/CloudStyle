@@ -30,20 +30,14 @@
 </template>
 
 <script>
+
 export default {
   name: 'Uploads',
 };
 </script>
 
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,800;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@0,400;0,500;0,600;0,800;1,700&display=swap');
+<style scoped>
 
-body {
-  background-color: #181a20;
-  color: white;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
 .nav{
     font-size: 1.125rem;
     font-family: Montserrat,sans-serif;
