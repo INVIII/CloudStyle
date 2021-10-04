@@ -22,7 +22,7 @@
           class="visually-hidden file-in"
           type="file"
           id="fileIn"
-          v-on:change="previewImage"
+          v-on:change="selectFile"
           accept=""
         />
         <div>
@@ -31,11 +31,11 @@
             <progress id="progress" :value="uploadValue" max="100"></progress>
           </p>
           <p>
-            {{picture}}
+            {{file}}
           </p>
         </div>
-        <div v-if="imageData != null">
-          <img class="preview" :src="picture" />
+        <div v-if="fileData != null">
+          <img class="preview" :src="file" />
         </div>
       </form>
     </div>
@@ -52,25 +52,25 @@ export default {
   name: "Box",
   data() {
     return {
-      imageData: null,
-      picture: null,
+      fileData: null,
+      file: null,
       uploadValue: 0,
     };
   },
   methods: {
-    previewImage(event) {
+    selectFile(event) {
       this.uploadValue = 0;
-      this.picture = null;
-      this.imageData = event.target.files[0];
+      this.file = null;
+      this.fileData = event.target.files[0];
       this.onUpload();
     },
 
     onUpload() {
-      this.picture = null;
+      this.file = null;
       const storageRef = firebase
         .storage()
-        .ref(`${this.imageData.name}`)
-        .put(this.imageData);
+        .ref(`${this.fileData.name}`)
+        .put(this.fileData);
       storageRef.on(
         `state_changed`,
         (snapshot) => {
@@ -83,7 +83,7 @@ export default {
         () => {
           this.uploadValue = 100;
           storageRef.snapshot.ref.getDownloadURL().then((url) => {
-            this.picture = url;
+            this.file = url;
           });
         }
       );

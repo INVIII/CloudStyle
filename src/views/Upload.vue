@@ -26,15 +26,17 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
+import { defineComponent } from 'vue'
+import Box from "@/components/Box.vue"
 
-import Box from "../components/Box";
-
-export default({
+export default defineComponent({
   name: "Upload",
   components: { 
-    Box 
+    Box
   },
+  setup() {
+  }
 });
 </script>
 
@@ -153,4 +155,5 @@ export default({
   letter-spacing: 0.5px;
   margin-top: 14px;
 }
+
 </style>

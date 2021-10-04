@@ -4,7 +4,7 @@ import { environment } from '@/configs/environment'
 import { handlePageTitle } from './helpers'
 
 import Home from '../views/Home.vue'
-import { Upload, Uploads, NotFound } from './lazyRoutes'
+import { Upload, Uploads, NotFound, Container } from './lazyRoutes'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -31,6 +31,12 @@ const routes: Array<RouteRecordRaw> = [
     },
   },
 
+  {
+    path: '/container',
+    name: 'Container',
+    component: Container,
+  },
+   
   {
     path: '/:pathMatch(.*)',
     name: 'NotFound',
