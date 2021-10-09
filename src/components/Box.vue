@@ -22,7 +22,7 @@
           class="visually-hidden file-in"
           type="file"
           id="fileIn"
-          v-on:change="selectFile"
+          v-on="selectFile"
           accept=""
         />
         <div>
