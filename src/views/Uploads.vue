@@ -23,6 +23,10 @@
       </div>
     </div>
 
+    <ol>
+      <li v-for="file in files" :key="file"><a :href="file">{{file}}</a></li>
+    </ol>
+
     <div class="twill">
         <img src="../assets/img/ghanta.png" />
       </div>
@@ -31,8 +35,18 @@
 
 <script>
 
+  import { getStoredFileData } from '../utils/localStorageHelper'
+
 export default {
   name: 'Uploads',
+  mounted(){
+    this.files = getStoredFileData()
+  },
+  data(){
+    return {
+      files: []
+    }
+  },
 };
 </script>
 

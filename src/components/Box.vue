@@ -46,6 +46,7 @@
 
 <script>
 import firebase from "firebase/compat/app";
+import {addFiletoStorage, getStoredFileData} from '../utils/localStorageHelper'
 import "firebase/compat/storage";
 
 export default {
@@ -84,6 +85,8 @@ export default {
           this.uploadValue = 100;
           storageRef.snapshot.ref.getDownloadURL().then((url) => {
             this.picture = url;
+            addFiletoStorage(url, 'files')
+            console.log(getStoredFileData())
           });
         }
       );
