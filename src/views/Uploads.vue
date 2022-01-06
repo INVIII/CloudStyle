@@ -24,7 +24,7 @@
     </div>
 
     <ol>
-      <li v-for="file in files" :key="file"><a :href="file">{{file}}</a></li>
+      <li v-for="file in files" :key="file.name"><a :href="file.url">{{file.name}}</a></li>
     </ol>
 
     <div class="twill">
@@ -40,7 +40,7 @@
 export default {
   name: 'Uploads',
   mounted(){
-    this.files = getStoredFileData()
+    this.files = getStoredFileData('files')
   },
   data(){
     return {

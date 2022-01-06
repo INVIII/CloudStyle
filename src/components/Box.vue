@@ -85,8 +85,13 @@ export default {
           this.uploadValue = 100;
           storageRef.snapshot.ref.getDownloadURL().then((url) => {
             this.picture = url;
-            addFiletoStorage(url, 'files')
-            console.log(getStoredFileData())
+            const fileData = {
+              name: this.imageData.name,
+              url: url,
+              dateUploaded: Date.now(),
+              extension: this.imageData.type
+            }
+            addFiletoStorage(fileData, 'files')
           });
         }
       );
