@@ -9,7 +9,6 @@
   "dependencies": {
     "@babel/core": "^7.15.5",
     "@popperjs/core": "^2.10.2",
-    "axios": "^0.21.2",
     "babel": "^6.23.0",
     "babel-loader": "^8.2.2",
     "bootstrap": "^5.1.1",
@@ -21,6 +20,7 @@
     "firebase": "^9.1.1",
     "jquery": "^3.6.0",
     "nanoid": "^3.1.23",
+    "nodemon": "^2.0.15",
     "normalize.css": "^8.0.1",
     "superstruct": "^0.15.2",
     "vue": "^3.2.2",

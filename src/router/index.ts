@@ -19,6 +19,7 @@ const routes: Array<RouteRecordRaw> = [
     component: Upload,
     meta: {
       title: 'Upload',
+      KeepAlive: true,
     },
   },
 
