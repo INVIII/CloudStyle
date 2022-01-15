@@ -35,8 +35,8 @@
 </template>
 
 <script>
-import { deleteObject, getDownloadURL, getStorage, ref, uploadBytesResumable } from "firebase/storage";
-import { addFiletoStorage, deleteFileFromCloud, removeFile } from "../utils/localStorageHelper";
+import { getDownloadURL, getStorage, ref, uploadBytesResumable } from "firebase/storage";
+import { addFiletoStorage, deleteFileFromCloud } from "../utils/localStorageHelper";
 import firebase from '../utils/firebase'
 
 export default {
