@@ -33,7 +33,7 @@
 </div>
 </template>
 
-<script lang="ts">
+<script>
 
   import { getStoredFileData } from '../utils/localStorageHelper'
 
@@ -108,6 +108,7 @@ export default {
   color: rgba(255, 255, 255, 1);
   font-size: 18px;
   line-height: 100%;
+  letter-spacing: 0%;
   text-align: center;
   font-family: "Source Sans Pro", sans-serif;
   cursor: pointer;

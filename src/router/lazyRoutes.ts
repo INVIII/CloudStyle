@@ -11,8 +11,3 @@ export const Uploads = (): Promise<Component> => {
 export const NotFound = (): Promise<Component> => {
   return import('../views/NotFound.vue')
 }
-
-// Temporary
-export const Container = (): Promise<Component> => {
-  return import('../components/UploadCard.vue')
-}

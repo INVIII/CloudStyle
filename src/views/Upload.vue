@@ -16,100 +16,25 @@
         My Uploads
       </div>
     </nav>
+
     <div class="hero1 d-flex flex-column mb-5">
       <div class="title text-center mb-3 mx-2">Upload your files</div>
       <div class="des2 text-center">The files should be maximum of 300mb.</div>
 
-      <div class="uploadCont mt-5">
-        <div class="upload-area d-flex flex-column justify-content-center align-items-center">
-          <div class="des2 mb-3 mx-2 text-center">
-            Drag & Drop files here to upload
-          </div>
-          <form action="/" method="POST">
-            <label for="fileIn">
-              <div class="btn btn-files mx-2">
-                Browse files
-              </div>
-            </label>
-            <input
-              id="fileIn"
-              class="visually-hidden file-in"
-              type="file"
-              v-on:change="selectFile"
-            />
-          </form>
-          <p class="visually-hidden">
-            Progress: {{ uploadValue.toFixed() + "%" }}
-            <progress id="progress" :value="uploadValue" max="100"></progress>
-          </p>
-        </div>
-      </div>
-
-
-      <div v-if="files.length !== 0" class="nam">Uploaded files</div>
+      <Box/>
     </div>
   </div>
-
-  <div class="d-md-flex">
-    <Container v-for="file in files" :file-data="file"></Container>
-  </div>
-
 </template>
 
 <script>
-import {defineComponent} from 'vue'
-import Box from "@/components/Box.vue"
-import Container from "@/components/UploadCard.vue";
-import firebase from "firebase/compat";
 
-export default defineComponent({
-  data() {
-    return {
-      files: [],
-      fileData: null,
-      file: null,
-      uploadValue: 0,
-    }
-  },
-  methods: {
-    selectFile(event) {
-      this.uploadValue = 0;
-      this.file = null;
-      this.fileData = event.target.files[0];
-      this.files.push(this.fileData)
-    },
+import Box from "../components/Box";
 
-    onUpload() {
-      this.file = null;
-      const storageRef = firebase
-        .storage()
-        .ref(`${this.fileData.name}`)
-        .put(this.fileData);
-      storageRef.on(
-        `state_changed`,
-        (snapshot) => {
-          this.uploadValue =
-            (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
-        },
-        (error) => {
-          console.log(error.message);
-        },
-        () => {
-          this.uploadValue = 100;
-          storageRef.snapshot.ref.getDownloadURL().then((url) => {
-            this.file = url;
-          });
-        }
-      );
-    },
-  },
+export default({
   name: "Upload",
-  components: {
-    Box,
-    Container
+  components: { 
+    Box 
   },
-  setup() {
-  }
 });
 </script>
 
@@ -133,7 +58,7 @@ export default defineComponent({
   background-color: #1e2027;
   height: 67px;
   box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14),
-  0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    0 1px 5px 0 rgba(0, 0, 0, 0.12);
 }
 
 .back1:hover,
@@ -147,16 +72,15 @@ export default defineComponent({
   cursor: pointer;
   margin-right: 500px;
 }
-
 .back2 {
   color: rgb(203, 210, 216);
   cursor: pointer;
   margin-left: 500px;
 }
-
 .hero1 {
   max-width: 600px;
-  margin: 190px auto 18vh;
+  margin: 18vh auto;
+  margin-top: 190px;
 }
 
 .uploadCont {
@@ -175,7 +99,7 @@ export default defineComponent({
 
 .upload-area:hover {
   border: 2px dashed #246bf7;
-  background-color: rgba(36, 107, 247, 0.2);
+  background-color: rgb(36, 107, 247, 0.2);
 }
 
 .btn-files {
@@ -198,12 +122,17 @@ export default defineComponent({
   margin-bottom: 30px;
   letter-spacing: -0.44px;
 }
-
 .btn-files:hover {
   color: #5e6271;
   border: 1px solid #5e6271;
 }
 
+.down {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  justify-content: center;
+}
 .down-2 {
   font-style: normal;
   font-weight: 700;
@@ -215,15 +144,13 @@ export default defineComponent({
   margin-top: -20px;
   font-family: "Montserrat", sans-serif;
 }
-
 .down-3 {
   width: 100%;
   font-family: "Source Sans Pro", sans-serif;
   font-size: 18px;
   line-height: 25px;
   color: #a8a9c2;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
   margin-top: 14px;
 }
-
 </style>

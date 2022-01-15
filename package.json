@@ -4,8 +4,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint",
-    "test": "echo `No Tests`"
+    "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "@babel/core": "^7.15.5",
@@ -39,7 +38,10 @@
     "@vue/cli-service": "~4.5.13",
     "@vue/compiler-sfc": "^3.2.1",
     "husky": "4",
+    "node-sass": "^5.0.0",
     "prettier": "^2.3.2",
-    "typescript": "^4.3.5"
+    "sass-loader": "^10.1.1",
+    "typescript": "^4.3.5",
+    "vue-tsc": "^0.3.0"
   }
 }
