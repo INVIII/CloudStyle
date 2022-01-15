@@ -5,20 +5,29 @@
         Drag & Drop files here to upload
       </div>
       <form method="POST" action="/">
-        <label for="fileIn">
-          <div class="btn btn-files mx-2">Browse files</div></label>
-        <input class="visually-hidden file-in" type="file" id="fileIn" v-on:change="startUpload" />
+        <label for="fileIn"
+          ><div class="btn btn-files mx-2">
+            Browse files
+          </div></label
+        >
+        <input
+          class="visually-hidden file-in"
+          type="file"
+          id="fileIn"
+          v-on="selectFile"
+          accept=""
+        />
         <div>
           <p>
             Progress: {{ uploadValue.toFixed() + "%" }}
             <progress id="progress" :value="uploadValue" max="100"></progress>
           </p>
           <p>
-            {{ url }}
+            {{file}}
           </p>
         </div>
-        <div v-if="file != null">
-          <img class="preview" :src="url" />
+        <div v-if="fileData != null">
+          <img class="preview" :src="file" />
         </div>
       </form>
     </div>
@@ -34,46 +43,41 @@ export default {
   name: "Box",
   data() {
     return {
+      fileData: null,
       file: null,
-      url: null,
       uploadValue: 0,
     };
   },
   methods: {
-    startUpload(event) {
+    selectFile(event) {
       this.uploadValue = 0;
-      this.url = null;
-      this.file = event.target.files[0];
+      this.file = null;
+      this.fileData = event.target.files[0];
       this.onUpload();
     },
 
     onUpload() {
-      this.url = null;
-
-      const storage = getStorage();
-      const storageRef = ref(storage, 'cloud-style' + Date.now().toString());
-
-      const uploadTask = uploadBytesResumable(storageRef, this.file)
-
-      uploadTask.on('state_changed', (snapshot)=>{
-        this.uploadValue = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
-      }, (error)=>{
-        console.log(error);
-      }, ()=>{
-        this.uploadValue = 100;
-        getDownloadURL(uploadTask.snapshot.ref).then((url)=>{
-          this.url = url;
-          const fileData = {
-            name: this.file.name,
-            url: url,
-            dateUploaded: Date.now(),
-            extension: this.file.type,
-          };
-          addFiletoStorage(fileData, 'files');
-          deleteFileFromCloud(storageRef, fileData);
-        })
-      }
-      );      
+      this.file = null;
+      const storageRef = firebase
+        .storage()
+        .ref(`${this.fileData.name}`)
+        .put(this.fileData);
+      storageRef.on(
+        `state_changed`,
+        (snapshot) => {
+          this.uploadValue =
+            (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+        },
+        (error) => {
+          console.log(error.message);
+        },
+        () => {
+          this.uploadValue = 100;
+          storageRef.snapshot.ref.getDownloadURL().then((url) => {
+            this.file = url;
+          });
+        }
+      );
     },
   },
 };
