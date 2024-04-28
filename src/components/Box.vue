@@ -6,7 +6,8 @@
       </div>
       <form method="POST" action="/">
         <label for="fileIn">
-          <div class="btn btn-files mx-2">Browse files</div></label>
+          <div class="btn btn-files mx-2">Browse files</div>
+        </label>
         <input class="visually-hidden file-in" type="file" id="fileIn" v-on:change="startUpload" />
         <div>
           <p>
@@ -57,15 +58,15 @@ export default {
 
       const uploadTask = uploadBytesResumable(storageRef, this.file)
 
-      uploadTask.on('state_changed', (snapshot)=>{
+      uploadTask.on('state_changed', (snapshot) => {
         console.log("Upload progress:", (snapshot.bytesTransferred / snapshot.totalBytes) * 100);
         this.uploadValue = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
-      }, (error)=>{
+      }, (error) => {
         console.log("Upload error:", error);
-      }, ()=>{
+      }, () => {
         console.log("Upload complete");
         this.uploadValue = 100;
-        getDownloadURL(uploadTask.snapshot.ref).then((url)=>{
+        getDownloadURL(uploadTask.snapshot.ref).then((url) => {
           console.log("Download URL:", url);
           this.url = url;
           const fileData = {
@@ -75,7 +76,9 @@ export default {
             extension: this.file.type,
           };
           addFiletoStorage(fileData, 'files');
-          deleteFileFromCloud(storageRef, fileData);
+          setTimeout(() => {
+            deleteFileFromCloud(storageRef, fileData);
+          }, 24 * 60 * 60 * 1000);
         })
       }
       );
