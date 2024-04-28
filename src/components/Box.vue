@@ -41,6 +41,7 @@ export default {
   },
   methods: {
     startUpload(event) {
+      console.log("File selected:", event.target.files[0]);
       this.uploadValue = 0;
       this.url = null;
       this.file = event.target.files[0];
@@ -48,6 +49,7 @@ export default {
     },
 
     onUpload() {
+      console.log("Uploading file:", this.file);
       this.url = null;
 
       const storage = getStorage();
@@ -56,12 +58,15 @@ export default {
       const uploadTask = uploadBytesResumable(storageRef, this.file)
 
       uploadTask.on('state_changed', (snapshot)=>{
+        console.log("Upload progress:", (snapshot.bytesTransferred / snapshot.totalBytes) * 100);
         this.uploadValue = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
       }, (error)=>{
-        console.log(error);
+        console.log("Upload error:", error);
       }, ()=>{
+        console.log("Upload complete");
         this.uploadValue = 100;
         getDownloadURL(uploadTask.snapshot.ref).then((url)=>{
+          console.log("Download URL:", url);
           this.url = url;
           const fileData = {
             name: this.file.name,
@@ -73,7 +78,7 @@ export default {
           deleteFileFromCloud(storageRef, fileData);
         })
       }
-      );      
+      );
     },
   },
 };
